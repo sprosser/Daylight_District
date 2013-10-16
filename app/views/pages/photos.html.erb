@@ -1,0 +1,19 @@
+<div id="container">
+  <div id="header"></div>
+  <div id="content" class="box transparent">
+    <h2>Some fun photo stuff goes here.</h2>
+  </div>
+  <div id="push"></div>
+</div>
+
+<div id="footer">
+  <div id="links" class="center">
+        <%= link_to "Home", root_path %> &nbsp; | &nbsp;
+        <%= link_to "Latest", latest_path %> &nbsp; | &nbsp;
+        <%= link_to "Releases", releases_path %> &nbsp; | &nbsp;
+        <%= link_to "Tour", tour_path %> &nbsp; | &nbsp;
+        <%= link_to "Photos", photos_path %> &nbsp; | &nbsp;
+        <%= link_to "Contact", contact_path %> 
+  </div>
+  <%= render 'footer' %>
+</div>
