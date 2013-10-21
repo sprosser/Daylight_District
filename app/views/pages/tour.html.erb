@@ -1,19 +1,66 @@
 <div id="container">
   <div id="header"></div>
-  <div id="content" class="box transparent">
+  <div id="content" class="box transparent text">
     <h2>This is where tour stuff goes.</h2>
+    <table>
+      <tr style="text-decoration:underline ">
+        <td>Date</td>
+        <td>City</td>
+        <td>Venue</td>
+        <td>Time</td>
+        <td>Tickets</td>
+      </tr>
+      <tr></tr>
+      <tr></tr>
+       <tr>
+        <td>11/01/2013</td>
+        <td>Chicago</td>
+        <td>Lucky's Bar <%= link_to "(map)", "http://maps.google.com", :target => '_blank' %> </td>
+        <td>9pm</td>
+        <td>Tickets</td>
+      </tr>
+      <tr></tr>
+       <tr>
+        <td>11/14/2013</td>
+        <td>Chicago</td>
+        <td>Rainbow Club <%= link_to "(map)", "http://maps.google.com", :target => '_blank' %></td>
+        <td>9pm</td>
+        <td>Tickets</td>
+      </tr>
+      <tr></tr>
+       <tr>
+        <td>12/01/2013</td>
+        <td>Chicago</td>
+        <td>Rainbow Club (again) <%= link_to "(map)", "http://maps.google.com", :target => '_blank' %></td>
+        <td>9pm</td>
+        <td>Tickets</td>
+      </tr>
+      <tr></tr>
+       <tr>
+        <td>12/14/2013</td>
+        <td>Chicago</td>
+        <td>Gay Bar <%= link_to "(map)", "http://maps.google.com", :target => '_blank' %></td>
+        <td>9pm</td>
+        <td>Tickets</td>
+      </tr>
+      <tr></tr>
+    </table>
   </div>
   <div id="push"></div>
 </div>
 
 <div id="footer">
-  <div id="links" class="center">
-        <%= link_to "Home", root_path %> &nbsp; | &nbsp;
-        <%= link_to "Latest", latest_path %> &nbsp; | &nbsp;
-        <%= link_to "Releases", releases_path %> &nbsp; | &nbsp;
-        <%= link_to "Tour", tour_path %> &nbsp; | &nbsp;
-        <%= link_to "Photos", photos_path %> &nbsp; | &nbsp;
-        <%= link_to "Contact", contact_path %> 
+  <div id="links" class="center text">
+    <%= link_to "Home", root_path %> &nbsp; | &nbsp;
+    <%= link_to "Latest", latest_path %> &nbsp; | &nbsp;
+    <%= link_to "Releases", releases_path %> &nbsp; | &nbsp;
+    <%= link_to "Tour", tour_path %> &nbsp; | &nbsp;
+    <%= link_to "Photos", photos_path %> &nbsp; | &nbsp;
+    <%= link_to "Contact", contact_path %> 
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <%= link_to image_tag("facebook_smash.png", size: "25x25"), "http://www.facebook.com/maxnedved", :target => '_blank' %>
+    <%= link_to image_tag("Twitter_Icon.png", size: "25x25"), "http://www.twitter.com/maxnedved", :target => '_blank' %>
+    <%= link_to image_tag("SoundCloud_logo.png", size: "35x25"), "http://www.soundcloud.com/thedaylightdistrict", :target => '_blank' %>
   </div>
   <%= render 'footer' %>
 </div>

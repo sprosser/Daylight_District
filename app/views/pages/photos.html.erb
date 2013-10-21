@@ -1,19 +1,23 @@
 <div id="container">
   <div id="header"></div>
-  <div id="content" class="box transparent">
+  <div id="content" class="box transparent text">
     <h2>Some fun photo stuff goes here.</h2>
   </div>
   <div id="push"></div>
 </div>
 
 <div id="footer">
-  <div id="links" class="center">
-        <%= link_to "Home", root_path %> &nbsp; | &nbsp;
-        <%= link_to "Latest", latest_path %> &nbsp; | &nbsp;
-        <%= link_to "Releases", releases_path %> &nbsp; | &nbsp;
-        <%= link_to "Tour", tour_path %> &nbsp; | &nbsp;
-        <%= link_to "Photos", photos_path %> &nbsp; | &nbsp;
-        <%= link_to "Contact", contact_path %> 
+  <div id="links" class="center text">
+    <%= link_to "Home", root_path %> &nbsp; | &nbsp;
+    <%= link_to "Latest", latest_path %> &nbsp; | &nbsp;
+    <%= link_to "Releases", releases_path %> &nbsp; | &nbsp;
+    <%= link_to "Tour", tour_path %> &nbsp; | &nbsp;
+    <%= link_to "Photos", photos_path %> &nbsp; | &nbsp;
+    <%= link_to "Contact", contact_path %> 
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <%= link_to image_tag("facebook_smash.png", size: "25x25"), "http://www.facebook.com/maxnedved", :target => '_blank' %>
+    <%= link_to image_tag("Twitter_Icon.png", size: "25x25"), "http://www.twitter.com/maxnedved", :target => '_blank' %>
+    <%= link_to image_tag("SoundCloud_logo.png", size: "35x25"), "http://www.soundcloud.com/thedaylightdistrict", :target => '_blank' %>
   </div>
   <%= render 'footer' %>
 </div>
