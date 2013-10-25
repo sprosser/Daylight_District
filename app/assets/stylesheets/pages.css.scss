@@ -33,6 +33,12 @@ td {
     text-decoration: none;
     color: #00a0d1;
   }
+  img {
+    margin:25px 15px 25px 15px;
+    padding:8px;
+    background-color:#FFFAFA;
+    box-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+  }
 }
 
 .text {
@@ -64,8 +70,8 @@ h2 {
   text-align: center;
 }
 .box {
-  width: 700px;
-  height: 500px;
+  width: 50%;
+  height: 100%;
   border: 1px solid black;
   margin-left: auto ;
   margin-right: auto ;
