@@ -1,9 +1,9 @@
 <div id="container">
   <div id="header"></div>
   <div id="content releases" class="box transparent text" style="width:65%;">
-    <h2>New Releases</h2>
+    <h2>*** New Releases ***</h2>
       <div class="center">
-        <div class="third" style="float:left;"><%= render 'adeline' %></div>
+        <div class="third " style="float:left;"><%= render 'adeline' %></div>
         <div class="third" style="float:left;"><%= render 'the_sirens_den' %></div>
         <div class="third" style="float:left;"><%= render 'sister_gemini' %></div>
       </div>
@@ -17,3 +17,25 @@
   </div>
   <%= render 'footer' %>
 </div>
+
+  <script type="text/javascript">
+    $('.lyrics').hide();
+
+    $('.adeline').on('click', function() {
+      $('.ad').fadeIn(500);
+      $('.siren').fadeOut(500);
+      return $('.sister').fadeOut(500);
+    });
+
+    $('.sis').on('click', function() {
+      $('.ad').fadeOut(500);
+      $('.siren').fadeOut(500);
+      return $('.sister').fadeIn(500);
+    });
+
+    $('.den').on('click', function() {
+      $('.ad').fadeOut(500);
+      $('.siren').fadeIn(500);
+      return $('.sister').fadeOut(500);
+    });
+   </script>
