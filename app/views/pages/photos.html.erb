@@ -1,10 +1,11 @@
 <div id="container">
   <div id="header"></div>
-    <h3 class="right-five">Photos</h3>
-    <div id="content" class="right-one">
-      <%= image_tag("daylight_1.jpg", :height => "150px", :width => "180px") %>
-      <%= image_tag("daylight_2.jpg", :height => "180px", :width => "150px") %>
-      <%= image_tag("daylight_3.jpg", :height => "180px", :width => "150px") %>
+    <div id="content pic" class="box transparent center pic" style="margin-left:700px; margin-right:5%;">
+      <h2 class="center">Photos</h3>
+
+      <%= image_tag("daylight_1.jpg") %>
+      <%#= image_tag("daylight_2.jpg", :height => "180px", :width => "150px") %>
+      <%#= image_tag("daylight_3.jpg", :height => "180px", :width => "150px") %>
   </div>
   <div id="push"></div>
 </div>
@@ -15,4 +16,8 @@
   </div>
   <%= render 'footer' %>
 </div>
+
+  <script type="text/javascript">
+    $('.box').fadeIn(500);
+  </script>
 
