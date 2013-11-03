@@ -1,11 +1,13 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="slider.jquery.js"></script>
 <div id="container">
   <div id="header"></div>
-    <div id="content pic" class="box transparent center pic" style="margin-left:700px; margin-right:5%;">
+    <div id="content pic" class="box transparent center pic right-side ">
       <h2 class="center">Photos</h3>
-
-      <%= image_tag("daylight_1.jpg") %>
-      <%#= image_tag("daylight_2.jpg", :height => "180px", :width => "150px") %>
-      <%#= image_tag("daylight_3.jpg", :height => "180px", :width => "150px") %>
+      <div id="1" class="slider"><img src="/assets/daylight_1.jpg"/></div>
+      <div id="2" class="slider"><img src="/assets/daylight_2.jpg"/></div>
+      <div id="3" class="slider"><img src="/assets/daylight_3.jpg"/></div>
+      
   </div>
   <div id="push"></div>
 </div>

@@ -1,6 +1,13 @@
 <div id="container">
   <div id="header"></div>
-  <div id="content right-one"></div>
+  <div id="content center" class="right-side">
+    <div class="home">
+      <h1>New Daylight District EP Released!</h1>
+      <%= image_tag("Attachment-1.jpeg", :height => "300px", :width => "300px") %>
+      <%#= image_tag("TheDaylightDistrict_01.jpg", :height => "300px", :width => "300px") %>
+      <iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/116767230"></iframe>
+    </div>
+  </div>
   <div id="push"></div>
 </div>
 
@@ -12,5 +19,5 @@
 </div>
 
 <script type="text/javascript">
-  $('#footer').hide().slideDown(200);
+  $('.home, img').fadeIn(700);
 </script>

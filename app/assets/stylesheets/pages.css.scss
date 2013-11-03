@@ -106,6 +106,25 @@ h3 {
     box-shadow: 10px 10px 5px  #000000;
   }
 }
+
+.home {
+  height:100% ;
+  display:none;
+  img {
+    float:left;
+    margin:10px;
+    padding:4px;
+    background-color:#FFFFFF;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  }
+  iframe{
+    float:left;
+    margin:10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+    width:90%;
+    height:100px;
+  }
+}
 .box {
   width: 50%;
   height: 100%;
@@ -114,6 +133,13 @@ h3 {
   margin-right: auto ;
   overflow-y: auto;
   display:none;
+}
+
+.right-side{
+  margin-left:700px; 
+  margin-right:5%;
+  text-align:center;
+  overflow-y: auto;
 }
 
 table {
