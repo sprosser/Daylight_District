@@ -13,4 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= lib/owl.carousel.min.js
 //= require_tree .

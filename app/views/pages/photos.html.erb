@@ -1,13 +1,12 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script src="slider.jquery.js"></script>
 <div id="container">
   <div id="header"></div>
     <div id="content pic" class="box transparent center pic right-side ">
       <h2 class="center">Photos</h3>
-      <div id="1" class="slider"><img src="/assets/daylight_1.jpg"/></div>
-      <div id="2" class="slider"><img src="/assets/daylight_2.jpg"/></div>
-      <div id="3" class="slider"><img src="/assets/daylight_3.jpg"/></div>
-      
+      <div id="slider">
+        <img src="/assets/daylight_1.jpg" class="1" />
+        <img src="/assets/daylight_2.jpg" class="2" />
+        <img src="/assets/daylight_3.jpg" class="3" />
+      </div>
   </div>
   <div id="push"></div>
 </div>
@@ -18,8 +17,26 @@
   </div>
   <%= render 'footer' %>
 </div>
-
+  
+  
   <script type="text/javascript">
     $('.box').fadeIn(500);
+    $('#slider').owlCarousel({
+      items: 1,
+      singleItem: true,
+      navigation: true
+    });
+    // $('.1').click(function (event) {
+    //   $('.1').addClass('hidden');
+    //   $('.2').removeClass('hidden');
+    // }); 
+    // $('.2').click(function (event) {
+    //   $('.2').addClass('hidden');
+    //   $('.3').removeClass('hidden');
+    // }); 
+    // $('.3').click(function (event) {
+    //   $('.3').addClass('hidden');
+    //   $('.1').removeClass('hidden');
+    // }); 
   </script>
 

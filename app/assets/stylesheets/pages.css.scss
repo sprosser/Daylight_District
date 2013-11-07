@@ -100,10 +100,10 @@ h3 {
 }
 .pic{
   img {
-    margin:0px 10px 0px 10px;
     padding:4px;
     background-color:#FFFFFF;
     box-shadow: 10px 10px 5px  #000000;
+
   }
 }
 
@@ -135,15 +135,30 @@ h3 {
   display:none;
 }
 
+.hidden{
+  display:none
+}
+
 .right-side{
   margin-left:700px; 
   margin-right:5%;
   text-align:center;
-  overflow-y: auto;
+  overflow-x: auto;
 }
 
 table {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+}
+
+#slider {
+  margin-top:auto;
+  margin-bottom:auto;
+
+  img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+  }
 }

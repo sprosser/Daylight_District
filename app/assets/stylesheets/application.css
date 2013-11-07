@@ -12,3 +12,6 @@
  *= require_tree .
  */
 
+@import "lib/owl.carousel.css";
+@import "lib/owl.theme.css";
+
