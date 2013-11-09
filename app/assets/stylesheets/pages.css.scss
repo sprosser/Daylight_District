@@ -16,6 +16,7 @@ body {
 }
 
 #content{
+  height:100%;
   height:auto;
   margin-bottom:150px;
 }
@@ -25,13 +26,10 @@ html, body {
   margin: 0; 
 }
 #container {
-  min-height: 100%;
-  height: auto;
   height: 100%;
-  margin: 0 auto 80px;
+  margin: 0 auto;
 }
 #footer, #push {
-  height: 85px;
   padding-top:35px;
 }
 
@@ -154,6 +152,10 @@ table {
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
+}
+
+.photo{
+  margin: 0 auto 85px; 
 }
 
 #slider {
