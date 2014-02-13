@@ -2,11 +2,11 @@
   <div id="header"></div>
   <div id="content center" class="right-side">
     <div class="home">
-      <h1>New Daylight District EP Released!</h1>
+      <h1>The Daylight District EP</h1><br /> 
+      <h3 style="margin-top:-25px;">now available on all major digital distributors</h3>
       <%= image_tag("Attachment-2.jpg") %>
       <%= link_to image_tag("itunes-logo1.jpg"), "https://itunes.apple.com/us/artist/the-daylight-district/id734694744?uo=4", :target => "blank" %>
-      <%= link_to image_tag("Amazon-MP3.png"), "http://www.amazon.com/The-Daylight-District-EP/dp/B00GAZRN04/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1383422503&sr=1-1-catcorr&keywords=the+daylight+district", :target => "blank" %>
-      <iframe  scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/116767230"></iframe>
+      <%= link_to image_tag("Amazon-MP3.png"), " http://www.amazon.com/s/ref=ntt_srch_drd_B00GAXUS26?ie=UTF8&field-keywords=The%20Daylight%20District&index=digital-music&search-type=ss", :target => "blank" %>
     </div>
   </div>
   <div id="push"></div>
@@ -15,6 +15,9 @@
 <div id="footer">
   <div id="links" class="center text">
     <%= render "bottom" %>
+    <div style="display: inline-block; margin-right:-300px;">
+      <%= render "social_links" %>
+    </div>
   </div>
   <%= render 'footer' %>
 </div>

@@ -1,17 +1,20 @@
 <div id="container" style="height:90%; margin-bottom:85px;">
-      <div id="content" class="box transparent center" style="width:75%;">
-      <div id="slider">
-        <%= image_tag("daylight_1.jpg") %>
-        <%= image_tag("daylight_2.jpg") %>
-        <%= image_tag("daylight_3.jpg") %>
-        <%= image_tag("daylight_4.jpg") %>
-        <%= image_tag("daylight_5.jpg") %>
-        <%= image_tag("daylight_6.jpg") %>
-        <%= image_tag("daylight_7.jpg") %>
-        <%= image_tag("daylight_8.jpg") %>
-        <%= image_tag("daylight_9.jpg") %>
-        <%= image_tag("daylight_10.jpg") %>
-      </div>
+  <div id="content" class="box transparent center" style="width:75%;">
+    <div id="slider">
+      <%= image_tag("IMG_9102.jpg") %>
+      <%= image_tag("DSC_3268.jpg") %>
+      <%= image_tag("DSC_3661.jpg") %>
+      <%= image_tag("DSC_3665.jpg") %>
+      <%= image_tag("DSC_3689.jpg") %>
+      <%= image_tag("DSC_3690.jpg") %>
+      <%= image_tag("maxgooseisland.png") %>
+      <%= image_tag("daylight_4.jpg") %>
+      <%= image_tag("daylight_5.jpg") %>
+      <%= image_tag("daylight_6.jpg") %>
+      <%= image_tag("daylight_7.jpg") %>
+      <%= image_tag("daylight_8.jpg") %>
+      <%= image_tag("daylight_10.jpg") %>
+    </div>
   </div>
   <div id="push"></div>
 </div>
@@ -19,6 +22,9 @@
 <div id="footer">
   <div id="links" class="center text">
     <%= render "bottom" %>
+    <div style="display: inline-block; margin-right:-300px;">
+      <%= render "social_links" %>
+    </div>
   </div>
   <%= render 'footer' %>
 </div>
@@ -29,7 +35,11 @@
   $('#slider img').fadeIn(750);
   $('#slider').owlCarousel({
     singleItem: true,
-    navigation: true
+    autoPlay : 4500,
+    stopOnHover: true,
+    rewindSpeed: 2000,
+    navigation: true,
+    transitionStyle: "fade"
   });
 </script>
 
