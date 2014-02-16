@@ -1,1 +1,15 @@
-<div id="bottom-logo" class="center base"><%= image_tag("Logo_med.png") %></div>
+<table id="footer" width="100%" style="width:100; padding:0px;">
+  <tr>
+    <td id="links" class="text white-background" style="float:right;">
+      <%= render "bottom" %>
+      <span>
+        <%= render "social_links" %>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td id="bottom-logo" class="center base" style="padding:0px;">
+      <%= image_tag("Logo_med.png") %>
+    </td>
+  </tr>
+</table>

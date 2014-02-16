@@ -3,7 +3,7 @@
   <div id="content" class="box transparent text">
     <h2>*** Tour ***</h2><br />
     <h2>(Coming Soon)</h3>
-    <table>
+    <table id="hide">
       <tr style="text-decoration:underline ">
         <td>Date</td>
         <td>City</td>
@@ -47,20 +47,11 @@
       <tr></tr>
     </table>
   </div>
-  <div id="push"></div>
 </div>
 
-<div id="footer">
-  <div id="links" class="center text">
-    <%= render "bottom" %>
-    <div style="display: inline-block; margin-right:-300px;">
-      <%= render "social_links" %>
-    </div>
-  </div>
-  <%= render 'footer' %>
-</div>
+<%= render 'footer' %>
 
 <script type="text/javascript">
   $('.box').fadeIn(500);
-  $('table').hide();
+  $('#hide').hide();
 </script>

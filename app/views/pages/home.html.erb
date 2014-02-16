@@ -1,26 +1,27 @@
-<div id="container">
-  <div id="header"></div>
-  <div id="content center" class="right-side">
-    <div class="home">
-      <h1>The Daylight District EP</h1><br /> 
-      <h3 style="margin-top:-25px;">now available on all major digital distributors</h3>
-      <%= image_tag("Attachment-2.jpg") %>
-      <%= link_to image_tag("itunes-logo1.jpg"), "https://itunes.apple.com/us/artist/the-daylight-district/id734694744?uo=4", :target => "blank" %>
-      <%= link_to image_tag("Amazon-MP3.png"), " http://www.amazon.com/s/ref=ntt_srch_drd_B00GAXUS26?ie=UTF8&field-keywords=The%20Daylight%20District&index=digital-music&search-type=ss", :target => "blank" %>
-    </div>
-  </div>
-  <div id="push"></div>
-</div>
+<table>
+  <tr>
+    <td width="50%">
+    </td>
+    <td colspan="2" class="center white-background">
+       <h1>The Daylight District EP</h1>
+       <h3>now available on all major digital distributors</h3>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="bottom" class="center white-bachground">
+      <h3 style="margin-bottom:0px;">Find the album at:</h3>
+      <%= link_to image_tag("itunes-logo1.jpg", size:'200x70'), "https://itunes.apple.com/us/artist/the-daylight-district/id734694744?uo=4", :target => "blank" %>
+      <%= link_to image_tag("Amazon-MP3.png", size:'200x85'), "http://www.amazon.com/s/ref=ntt_srch_drd_B00GAXUS26?ie=UTF8&field-keywords=The%20Daylight%20District&index=digital-music&search-type=ss", :target => "blank", style:"margin-bottom:-100px;" %>
+    </td>
+    <td class="center">
+      <%= link_to "http://www.amazon.com/s/ref=ntt_srch_drd_B00GAXUS26?ie=UTF8&field-keywords=The%20Daylight%20District&index=digital-music&search-type=ss" do %>
+        <%= image_tag("Attachment-2.jpg", size:'400x400') %>
+      <% end %>
+    </td>
+  </tr>
+</table>
 
-<div id="footer">
-  <div id="links" class="center text">
-    <%= render "bottom" %>
-    <div style="display: inline-block; margin-right:-300px;">
-      <%= render "social_links" %>
-    </div>
-  </div>
-  <%= render 'footer' %>
-</div>
+<%= render 'footer' %>
 
 <script type="text/javascript">
   $('.home, img').fadeIn(700);
