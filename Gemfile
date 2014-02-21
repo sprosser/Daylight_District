@@ -10,6 +10,7 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 gem 'omniauth-facebook', '1.4.0'
 gem 'carrierwave'
+gem 'cache_digests'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'
