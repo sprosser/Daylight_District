@@ -1,4 +1,5 @@
-class PagesController < ApplicationController
+class PagesController < ActionController
+  caches_page :home, :latest, :tour, :releases, :photos, :contact
 
   respond_to :html, :js
 
