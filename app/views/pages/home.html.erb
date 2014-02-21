@@ -1,28 +1,30 @@
-<table>
-  <tr>
-    <td width="50%">
-    </td>
-    <td colspan="2" class="center white-background" style="line-height:0.7">
-       <h1>The Daylight District EP</h1>
-       <h3>now available on all major digital distributors</h3>
-       <h3>— Featuring the new single “Adeline” —</h3>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="1" valign="bottom" class="center">
-      <span class="white-background">
-        <h3 style="margin-bottom:0px;">Find the album at:</h3>
-        <%= link_to image_tag("itunes-logo1.jpg", size:'200x70'), "https://itunes.apple.com/us/artist/the-daylight-district/id734694744?uo=4", :target => "blank" %>
-        <%= link_to image_tag("Amazon-MP3.png", size:'200x85'), "http://www.amazon.com/s/ref=ntt_srch_drd_B00GAXUS26?ie=UTF8&field-keywords=The%20Daylight%20District&index=digital-music&search-type=ss", :target => "blank", style:"margin-bottom:-100px;" %>
-      </span>
-    </td>
-    <td class="center">
-      <iframe width="425" height="425" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/135210186&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
-    </td>
-  </tr>
-</table>
+<% cache('home') do %>
+  <table>
+    <tr>
+      <td width="50%">
+      </td>
+      <td colspan="2" class="center white-background" style="line-height:0.7">
+        <h1>The Daylight District EP</h1>
+        <h3>now available on all major digital distributors</h3>
+        <h3>— Featuring the new single “Adeline” —</h3>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="1" valign="bottom" class="center">
+        <span class="white-background">
+          <h3 style="margin-bottom:0px;">Find the album at:</h3>
+          <%= link_to image_tag("itunes-logo1.jpg", size:'200x70'), "https://itunes.apple.com/us/artist/the-daylight-district/id734694744?uo=4", :target => "blank" %>
+          <%= link_to image_tag("Amazon-MP3.png", size:'200x85'), "http://www.amazon.com/s/ref=ntt_srch_drd_B00GAXUS26?ie=UTF8&field-keywords=The%20Daylight%20District&index=digital-music&search-type=ss", :target => "blank", style:"margin-bottom:-100px;" %>
+        </span>
+      </td>
+      <td class="center">
+        <iframe width="425" height="425" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/135210186&amp;auto_play=false&amp;hide_related=false&amp;visual=true"></iframe>
+      </td>
+    </tr>
+  </table>
 
-<%= render 'footer' %>
+  <%= render 'footer' %>
+<% end %>
 
 <script type="text/javascript">
   $('.home, img').fadeIn(700);
